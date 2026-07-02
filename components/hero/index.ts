@@ -1,0 +1,6 @@
+export { HeroBackground }   from './HeroBackground'
+export { HeroContent }      from './HeroContent'
+export { HeroIllustration } from './HeroIllustration'
+export { ParticleCanvas }   from './ParticleCanvas'
+export { MouseGlow }        from './MouseGlow'
+export { FloatingCode }     from './FloatingCode'

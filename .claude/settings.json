@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep -l -i \"image\")",
+      "Bash(node -e ' *)",
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\BAPS\\\\Downloads\\\\logo.jpg\" \"C:\\\\Users\\\\BAPS\\\\velix\\\\public\\\\logo.jpg\" -Force)",
+      "Bash(node -e \"try { require\\('sharp'\\); console.log\\('sharp available'\\); } catch\\(e\\) { console.log\\('no sharp'\\); }\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\BAPS\\Downloads"
+    ]
+  }
+}
