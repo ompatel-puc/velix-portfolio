@@ -133,7 +133,7 @@ export function Footer() {
                 className="group flex items-center self-start transition-transform duration-300 hover:scale-105"
               >
                 <Image
-                  src="/logo.jpg"
+                  src="/logo-transparent.png"
                   alt="Velix Logo"
                   width={180}
                   height={55}

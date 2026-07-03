@@ -91,7 +91,7 @@ export function Navbar() {
       >
         <Container>
           {/* Thinner bar — h-14 instead of h-[72px] */}
-          <div className="flex h-14 items-center justify-between">
+          <div className="flex h-20 items-center justify-between">
 
             {/* Logo */}
             <MagneticButton strength={0.25}>
@@ -142,24 +142,28 @@ export function Navbar() {
             </ul>
 
             {/* Desktop CTA */}
-            <div className="hidden lg:block">
-              <MagneticButton strength={0.4}>
-                <a
-                  href="#contact"
-                  className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl px-4 py-2 font-heading text-[12px] font-semibold text-[#050816] transition-all duration-200"
-                  style={{
-                    background: 'linear-gradient(135deg, #E9FF00 0%, #C4D900 100%)',
-                    boxShadow: '0 0 20px rgba(233,255,0,0.18)',
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 0 32px rgba(233,255,0,0.40)' }}
-                  onMouseLeave={(e) => { e.currentTarget.style.boxShadow = '0 0 20px rgba(233,255,0,0.18)' }}
-                >
-                  <span className="pointer-events-none absolute inset-0 -translate-x-full skew-x-[-20deg] bg-white/20 transition-transform duration-700 group-hover:translate-x-[200%]" />
-                  Book a Call
-                  <ArrowUpRight className="h-3 w-3 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                </a>
-              </MagneticButton>
-            </div>
+            <div className="hidden lg:flex items-center">
+            <MagneticButton strength={0.4}>
+            <a
+              href="#contact"
+              className="group relative inline-flex h-11 min-w-[170px] items-center justify-center gap-2 whitespace-nowrap overflow-hidden rounded-full px-7 font-heading text-sm font-semibold text-[#050816] transition-all duration-300"
+            style={{
+            background: 'linear-gradient(135deg, #E9FF00 0%, #C4D900 100%)',
+            boxShadow: '0 10px 30px rgba(233,255,0,0.18)',
+            }}
+           onMouseEnter={(e) => {
+          e.currentTarget.style.boxShadow = '0 14px 40px rgba(233,255,0,0.35)'
+            }}
+            onMouseLeave={(e) => {
+            e.currentTarget.style.boxShadow = '0 10px 30px rgba(233,255,0,0.18)'
+               }}
+    >
+      <span className="pointer-events-none absolute inset-0 -translate-x-full skew-x-[-20deg] bg-white/20 transition-transform duration-700 group-hover:translate-x-[200%]" />
+      <span>Book a Call</span>
+      <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+    </a>
+  </MagneticButton>
+</div>
 
             {/* Mobile hamburger */}
             <button
