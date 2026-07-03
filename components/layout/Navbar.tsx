@@ -100,7 +100,7 @@ export function Navbar() {
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.3, ease: 'easeOut' }}
                 >
-                  <VelixLogo className="h-10 w-auto text-white md:h-12" />
+                  <VelixLogo className="h-12 md:h-14" />
                 </motion.div>
               </Link>
             </MagneticButton>

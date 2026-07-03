@@ -324,7 +324,7 @@
     border-radius: 4px;
   }
 
-  img, video, svg { display: block; max-width: 100%; }
+  img, video, svg { display: block; max-width: 100%; height: auto; }
   input, textarea, select { background: transparent; }
 }
 
@@ -826,12 +826,6 @@
 /* Promote compositor-friendly properties to their own layers */
 .will-change-transform { will-change: transform; }
 .will-change-opacity   { will-change: opacity; }
-
-/* Prevent layout shifts from images */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 /* Smooth scroll (overridden by Lenis on JS-enabled pages) */
 html {
